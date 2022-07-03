@@ -15,7 +15,7 @@ export const convertTextToSpeech = async (text, setStatus) => {
         url: 'https://cloudlabs-text-to-speech.p.rapidapi.com/synthesize',
         headers: {
             'content-type': 'application/x-www-form-urlencoded',
-            'X-RapidAPI-Key': process.env.REACT_APP_API_KEY,
+            'X-RapidAPI-Key': process.env.REACT_APP_API_KEY || "e83ecd972fmsh69e869a941c6ae0p1aa318jsn738c8d97ea16",
             'X-RapidAPI-Host': 'cloudlabs-text-to-speech.p.rapidapi.com'
         },
         data: encodedParams
